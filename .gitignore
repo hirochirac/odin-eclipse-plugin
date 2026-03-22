@@ -2,6 +2,11 @@
 target/
 bin/
 *.class
+*.jar
+*.zip
+
+# Distribution
+dist/
 
 # Eclipse
 .metadata
