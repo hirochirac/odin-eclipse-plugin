@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="odin-eclipse-plugin" default="build" basedir=".">
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="bin"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="plugin.jar" value="${dist.dir}/com.odin.eclipse_1.0.0.jar"/>
+
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" source="11" target="11"/>
+    </target>
+
+    <target name="build" depends="compile">
+        <jar destfile="${plugin.jar}" basedir="${build.dir}">
+            <manifest>
+                <attribute name="Bundle-ManifestVersion" value="2"/>
+                <attribute name="Bundle-Name" value="Odin Eclipse Plugin"/>
+                <attribute name="Bundle-SymbolicName" value="com.odin.eclipse;singleton:=true"/>
+                <attribute name="Bundle-Version" value="1.0.0"/>
+            </manifest>
+            <fileset dir=".">
+                <include name="plugin.xml"/>
+                <include name="icons/**"/>
+            </fileset>
+            <zipfileset dir="META-INF" prefix="META-INF"/>
+        </jar>
+    </target>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+</project>

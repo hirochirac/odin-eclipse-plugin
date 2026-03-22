@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.odin.eclipse.feature"
+      label="Odin Language Support"
+      version="1.0.0.qualifier">
+   <description>
+      Eclipse plugin for Odin language with syntax highlighting and OLS support
+   </description>
+   <plugin
+         id="com.odin.eclipse"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+</feature>

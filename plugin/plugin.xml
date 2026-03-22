@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            id="com.odin.content"
+            name="Odin Source File"
+            base-type="org.eclipse.core.runtime.text"
+            file-extensions="odin">
+      </content-type>
+   </extension>
+   
+   <extension point="org.eclipse.ui.genericeditor.presentationReconcilers">
+      <presentationReconciler
+            class="com.odin.editor.OdinPresentationReconciler"
+            contentType="com.odin.content">
+      </presentationReconciler>
+   </extension>
+   
+   <extension point="org.eclipse.lsp4e.languageServer">
+      <server
+            id="com.odin.lsp.server"
+            class="com.odin.lsp.OdinLanguageServer"
+            label="Odin Language Server">
+      </server>
+      <contentTypeMapping
+            contentType="com.odin.content"
+            id="com.odin.lsp.server"
+            languageId="odin">
+      </contentTypeMapping>
+   </extension>
+</plugin>

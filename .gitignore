@@ -1,0 +1,17 @@
+# Build outputs
+target/
+bin/
+*.class
+
+# Eclipse
+.metadata
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

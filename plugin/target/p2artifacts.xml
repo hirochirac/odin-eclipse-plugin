@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='com.odin.eclipse' version='1.0.0.202603142005'>
+    <properties size='6'>
+      <property name='artifact.size' value='11250'/>
+      <property name='download.size' value='11250'/>
+      <property name='maven-groupId' value='com.odin'/>
+      <property name='maven-artifactId' value='com.odin.eclipse'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-plugin'/>
+    </properties>
+  </artifact>
+</artifacts>
