@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="odin-eclipse-plugin.feature"
+      label="Odin Eclipse Plugin Feature"
+      version="1.0.0.qualifier"
+      provider-name="odin-eclipse-plugin">
+
+   <description>
+      Eclipse plugin for the Odin programming language.
+   </description>
+
+   <license url="">
+      Eclipse Public License - v 2.0
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.lsp4e"/>
+   </requires>
+
+   <plugin
+         id="odin-eclipse-plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
